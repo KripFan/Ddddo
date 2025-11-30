@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея | ИнфоРесурс</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Дополнительные стили для галереи, добавлены в HTML для простоты */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item-caption {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Логотип ИнфоРесурса">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="gallery.html" class="active">Галерея</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section style="padding-top: 30px;">
+            <h2>🖼️ Галерея Идей и Вдохновения</h2>
+            <p>Добро пожаловать в нашу визуальную сокровищницу! Здесь собраны самые яркие моменты, концепты и творческие работы, созданные нашим сообществом. Погрузитесь в мир вдохновения!</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="gallery_image_1.png" alt="Рабочий процесс">
+                    <div class="gallery-item-caption">В процессе создания</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery_image_2.png" alt="Скетч идеи">
+                    <div class="gallery-item-caption">Первые наброски</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery_image_3.png" alt="Развитие концепции">
+                    <div class="gallery-item-caption">Развитие концепции</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery_image_4.png" alt="Готовый результат">
+                    <div class="gallery-item-caption">Готовый результат</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery_image_5.png" alt="Командная работа">
+                    <div class="gallery-item-caption">Командная работа</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery_image_6.png" alt="Интерактивный проект">
+                    <div class="gallery-item-caption">Интерактивный проект</div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 40px; font-style: italic; color: #777;">Хотите поделиться своими работами? Свяжитесь с нами!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 ИнфоРесурс. Все права защищены. Развиваемся вместе!</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
